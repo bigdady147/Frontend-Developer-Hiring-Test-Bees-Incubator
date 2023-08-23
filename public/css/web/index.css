@@ -164,6 +164,10 @@ a {
 
 .question2 .table-data table {
   border: 1px solid #ccc;
+  width: 100%;
+}
+.question2 .table-data table thead {
+  background: rgba(34, 65, 131, 0.08);
 }
 .question2 .table-data table thead th {
   padding: 4px 10px;

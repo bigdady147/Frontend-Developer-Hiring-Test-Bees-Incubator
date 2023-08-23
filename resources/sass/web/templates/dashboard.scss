@@ -46,7 +46,9 @@
     .table-data{
         table{
             border: 1px solid #ccc;
+            width: 100%;
             thead{
+                background: rgba(34, 65, 131, 0.08);
 
                 th{
                     padding: 4px 10px;

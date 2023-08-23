@@ -23,6 +23,7 @@
                         </th>
                         <th>ID</th>
                         <th>NAME</th>
+                        <th>EMAIL</th>
                         <th>BALANCE</th>
                         <th>STATUS</th>
                         <th>REGISTER AT</th>
@@ -30,15 +31,19 @@
                 </thead>
                 <tbody>
                     <tr v-for="(item,index) in list">
-                        <td data-field="fruit" data-sortable="true" class="sorting">
+                        <td data-field="fruit" data-sortable="true" class="sorting text-center">
                             <input v-model="selected" type="checkbox" :value="item.id" :id="'id'+item.id">
                         </td>
+                        <td v-text="_.get(item,'id','')"></td>
                         <td v-text="_.get(item,'name','')"></td>
+                        <td >
+                           <p>
+                               <a :href="'mailto:' +  _.get(item,'email','')" v-text="_.get(item,'email','')"></a>
+                           </p>
+                        </td>
                         <td v-text="_.get(item,'balance','')"></td>
-                        <td v-text="_.get(item,'email','')"></td>
-                        <td v-text="_.get(item,'email','')"></td>
-                        <td v-text="_.get(item,'registerAt','')"></td>
                         <td v-text="_.get(item,'active','')"></td>
+                        <td v-text="_.get(item,'registerAt','')"></td>
                     </tr>
                 </tbody>
             </table>
