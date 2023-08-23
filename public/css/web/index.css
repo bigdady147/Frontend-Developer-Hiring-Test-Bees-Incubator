@@ -1,0 +1,171 @@
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+span, li, ul, div, a, p {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-desktop {
+  font-size: 14px;
+}
+@media (max-width: 991px) {
+  .text-desktop {
+    font-size: 12px;
+  }
+}
+
+.title-desktop {
+  font-size: 16px;
+  font-weight: 600;
+}
+@media (max-width: 991px) {
+  .title-desktop {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+.text-bolder {
+  font-weight: 700;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-pri {
+  color: #09aff4;
+}
+
+.color-dark {
+  color: #868b9f;
+}
+
+.cover-images img {
+  display: block;
+  max-width: 100%;
+}
+
+.flex-jt-al-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-jt-al-cen-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.color-pri-light {
+  color: #09abef;
+}
+
+.big-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+@media (max-width: 991px) {
+  .big-title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 767px) {
+  .big-title {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+.group-sidebar .nav-item .nav-link {
+  color: #fff;
+}
+.group-sidebar .nav-link {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.group-sidebar .nav-link:hover {
+  color: #09abef;
+}
+.group-sidebar .nav-link-active {
+  color: #09abef;
+}
+
+.rgb-to-hex .form-item {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.rgb-to-hex .form-item label {
+  font-weight: 600;
+}
+.rgb-to-hex .form-item input {
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.rgb-to-hex .block-result .result {
+  font-size: 14px;
+  font-weight: 600;
+}
+.rgb-to-hex .block-result .color {
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  background: red;
+  display: block;
+}
+.rgb-to-hex .convert {
+  border: none;
+  outline: none;
+  background: #09abef;
+  border-radius: 4px;
+  color: #fff;
+  padding: 6px 40px;
+  margin: 10px 0px;
+  border: 2px solid #09abef;
+  transition: all 0.3s ease;
+}
+.rgb-to-hex .convert:hover {
+  background: #fff;
+  color: #09abef;
+  border: 2px solid #09abef;
+}
+
+.question2 .table-data table {
+  border: 1px solid #ccc;
+}
+.question2 .table-data table thead th {
+  padding: 4px 10px;
+  text-align: center;
+}
