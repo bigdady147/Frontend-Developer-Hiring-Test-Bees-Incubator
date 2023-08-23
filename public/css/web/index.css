@@ -162,14 +162,108 @@ a {
   border: 2px solid #09abef;
 }
 
+.question2 {
+  padding: 40px 0px;
+}
+.question2 .title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #09abef;
+}
 .question2 .table-data table {
+  border-collapse: collapse;
+  border-radius: 4px;
+  overflow: hidden;
   border: 1px solid #ccc;
   width: 100%;
 }
 .question2 .table-data table thead {
-  background: rgba(34, 65, 131, 0.08);
+  background: #09abef;
+}
+.question2 .table-data table thead .sorting {
+  padding: 8px;
+  text-align: center;
 }
 .question2 .table-data table thead th {
-  padding: 4px 10px;
-  text-align: center;
+  padding: 8px 0px;
+  color: #fff;
+}
+.question2 .table-data table tbody {
+  background: #fff;
+}
+.question2 .pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.question2 .pagination button {
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+}
+.question2 .pagination button.active {
+  background-color: #007bff;
+  color: #fff;
+}
+.question2 .btn-status {
+  padding: 4px 8px;
+  border-radius: 8px;
+  color: #fff;
+}
+.question2 .list-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.question2 .list-action .icon-edit i {
+  cursor: pointer;
+  color: #09abef;
+  font-size: 14px;
+}
+.question2 .list-action .icon-remove {
+  padding-left: 10px;
+}
+.question2 .list-action .icon-remove i {
+  cursor: pointer;
+  color: red;
+  font-size: 14px;
+}
+.question2 .table-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.question2 .tooltips-date {
+  position: relative;
+}
+.question2 .tooltips-date .popup {
+  position: absolute;
+  color: red;
+  background: #000;
+  color: #fff;
+  top: -100px;
+  left: 50%;
+  padding: 20px;
+  z-index: 1;
+  color: red;
+}
+.question2 .tooltips-date .text {
+  position: absolute;
+  z-index: 2;
+  padding: 10px 20px;
+  background: #000;
+  color: red;
+  top: -40px;
+  left: 10%;
+  visibility: hidden;
+  font-size: 12px;
+  border-radius: 4px;
+  display: block;
+  width: 220px;
+}
+.question2 .tooltips-date:hover > .text {
+  color: #fff !important;
+  visibility: visible;
 }
